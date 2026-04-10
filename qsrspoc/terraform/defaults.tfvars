@@ -1,5 +1,5 @@
-aws_access_key = "AKIAXG3VVL3S6Y6EQ65X"
-aws_secret_key = "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"
+aws_access_key = ""
+aws_secret_key = ""
 env = "dev"
 region = "us-east-1"
 raw_bucket_name    = "stb-data-warehouse-raw"
