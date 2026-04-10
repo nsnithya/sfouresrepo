@@ -1,5 +1,5 @@
-aws_access_key = "AKIA4SZHOCCZBUPDDFM2"
-aws_secret_key = "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"
+aws_access_key = ""
+aws_secret_key = ""
 bucket_name    = "qsrs-ocr-poc-dev"
 versioning_bucket_name = "qsrs-ocr-poc-dev1"
 region = "us-east-1"
