@@ -1,0 +1,32 @@
+documents_dir: "data/docs"
+eval_questions_dir: "data/bulk_qa/"
+eval_file_name: "demo_qa_ds.xlsx"
+index_dir: "data/indexes"
+
+llama_index_cfg:
+  basic_rag:
+    index_save_dir: "data/indexes/basic_index"
+    index_read_dir: "data/indexes/basic_index"
+  pagewise_rag:
+    index_save_dir: "data/indexes/pagewise_index"
+    index_read_dir: "data/indexes"
+  sentence_retrieval:
+    index_save_dir: "data/indexes/sentence_window_index"
+    index_read_dir: "data/indexes"
+    sentence_window_size: 6 #3 
+    similarity_top_k: 12 #6
+    rerank_top_n: 3 #2
+  auto_merging_retrieval:
+    index_save_dir: "data/indexes/automerging_index"
+    index_read_dir: "data/indexes"
+    chunk_sizes: [2048, 512, 128]
+    similarity_top_k: 12 # 12 6
+    rerank_top_n: 2 #4 2
+  llama_eval_method: "pagewise_retrieval" # sentence_retrieval # auto_merging_retrieval # pagewise_retrieval
+
+llm_cfg:
+  #gpt_model: "llama3.2"
+  gpt_model: "anthropic.claude-v2" #"meta.llama3-8b-instruct-v1:0" 
+  embed_model_name: "amazon.titan-embed-text-v1" #"text-embedding-ada-002" # "bge-small-en-v1.5"
+  rerank_model: "BAAI/bge-reranker-base"
+  temperature: 0.0
