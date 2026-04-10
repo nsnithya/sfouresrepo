@@ -1,7 +1,7 @@
 aws_access_key = "" # This needs to be replaced
 aws_secret_key = "" # This needs to be replaced
-bucket_name    = "qsrs-ocr-poc-dev1"
-bucket_name1   = "qsrs-ocr-poc-pdf-drop-location-dev1"
+#bucket_name    = "qsrs-ocr-poc-dev1"
+#bucket_name1   = "qsrs-ocr-poc-pdf-drop-location-dev1"
 versioning_bucket_name = "qsrs-ocr-poc-dev1"
 sagemaker_model = "biobert-model-custom-v6"
 sagemaker_endpoint = "biobert-model-endpoint-custom-v6"

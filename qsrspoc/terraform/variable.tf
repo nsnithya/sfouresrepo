@@ -127,5 +127,5 @@ variable "topic_to_queues" {
 # VPC
 variable "aws_vpc_id" {
   description = "The VPC Id"
-  default = "vpc-08bf02cf3769d9aea"
+  #default = "vpc-08bf02cf3769d9aea"
 }
